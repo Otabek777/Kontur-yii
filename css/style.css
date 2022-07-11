@@ -82,6 +82,10 @@ ul, ol {
           transform: translate(-50%, -50%);
 }
 
+.banner__mobile {
+  display: none;
+}
+
 .banner__content {
   width: calc(100% - 422px);
   padding-left: 67px;
@@ -112,6 +116,9 @@ ul, ol {
 .banner__content .text a {
   color: #F4BA25;
 }
+.banner__content .text a:hover {
+  text-decoration: underline;
+}
 
 .banner__btn {
   width: 213px;
@@ -123,6 +130,12 @@ ul, ol {
   font-size: 17px;
   line-height: 31px;
   color: #FFFFFF;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.banner__btn:hover {
+  background: #F4BA25;
 }
 
 .title_h2 {
@@ -164,6 +177,9 @@ ul, ol {
   background: #F8F8F8;
   border-radius: 30px;
   padding-top: 40px;
+  margin-right: 30px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .services__block .title {
   font-weight: 400;
@@ -196,7 +212,17 @@ ul, ol {
   font-weight: 550;
 }
 .services__block .img {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services__block:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .services__text {
@@ -245,6 +271,8 @@ ul, ol {
   padding: 0;
   margin-bottom: 30px;
   margin-right: 30px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .services__link:nth-child(3n), .services__link:last-child {
@@ -253,6 +281,12 @@ ul, ol {
 
 .services__link:nth-child(4), .services__link:nth-child(5) {
   width: 480px;
+}
+
+.services__link:hover {
+  border: 1px solid #F4BA25;
+  background-color: #F4BA25;
+  color: #fff;
 }
 
 .why_yii {
@@ -355,6 +389,9 @@ ul, ol {
   padding: 0 32px;
   padding-top: 74px;
 }
+.working__block .arr_mobile {
+  display: none;
+}
 .working__block .icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -415,6 +452,48 @@ ul, ol {
 
 .working__block:nth-child(4n) {
   margin-right: 0;
+}
+
+.working__block:nth-child(1) .arr {
+  position: absolute;
+  top: -40px;
+  right: -86px;
+  z-index: 1;
+}
+
+.working__block:nth-child(2) .arr {
+  position: absolute;
+  bottom: 6px;
+  right: -86px;
+  z-index: 1;
+}
+
+.working__block:nth-child(3) .arr {
+  position: absolute;
+  top: -37px;
+  right: -82px;
+  z-index: 1;
+}
+
+.working__block:nth-child(5) .arr {
+  position: absolute;
+  bottom: -40px;
+  right: -67px;
+  z-index: 1;
+}
+
+.working__block:nth-child(6) .arr {
+  position: absolute;
+  top: 16px;
+  right: -75px;
+  z-index: 1;
+}
+
+.working__block:nth-child(7) .arr {
+  position: absolute;
+  bottom: -26px;
+  right: -82px;
+  z-index: 1;
 }
 
 .working__call {
@@ -616,6 +695,12 @@ ul, ol {
     max-width: 100%;
     margin-bottom: 40px;
   }
+  .banner__img img {
+    display: none;
+  }
+  .banner__img .banner__mobile {
+    display: block;
+  }
 
   .banner__content .title {
     font-weight: 900;
@@ -759,6 +844,43 @@ ul, ol {
     margin-bottom: 10px;
     padding: 50px 13px 0 17px;
   }
+  .working__block .arr {
+    display: none;
+  }
+  .working__block .arr_mobile {
+    display: block;
+    position: absolute;
+    top: 108px;
+    z-index: 1;
+  }
+
+  .working__block:nth-child(1) .arr_mobile {
+    right: -7px;
+  }
+
+  .working__block:nth-child(2) .arr_mobile {
+    left: 10px;
+  }
+
+  .working__block:nth-child(3) .arr_mobile {
+    right: 11px;
+  }
+
+  .working__block:nth-child(4) .arr_mobile {
+    left: 6px;
+  }
+
+  .working__block:nth-child(5) .arr_mobile {
+    right: 16px;
+  }
+
+  .working__block:nth-child(6) .arr_mobile {
+    left: 10px;
+  }
+
+  .working__block:nth-child(7) .arr_mobile {
+    right: 16px;
+  }
 
   .working__block .icon {
     width: 60px;
@@ -893,5 +1015,51 @@ ul, ol {
     font-size: 16px;
     line-height: 21px;
     color: #232529;
+  }
+
+  .services__box {
+    margin-top: 0;
+    margin-bottom: 30px;
+    width: calc(100% + 15px);
+  }
+  .services__box .wrap {
+    -webkit-transform: translateX(12%);
+            transform: translateX(12%);
+  }
+
+  .services__block {
+    width: 260px;
+    height: 335px;
+    margin-right: 0;
+    overflow: hidden;
+    padding-top: 30px;
+  }
+  .services__block .title {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 8px;
+  }
+
+  .services__block .line {
+    height: 3px;
+    margin-bottom: 20px;
+  }
+
+  .services__block .price {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+  .services__block .price span {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .slick-slide .img {
+    padding: 0 5px;
+  }
+
+  .slick-slide img {
+    width: 100%;
   }
 }

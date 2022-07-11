@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <title></title>
@@ -17,6 +19,7 @@
                 <div class="banner__box">
                     <div class="banner__img">
                         <img src="img/banner-img.png" alt="">
+                        <img src="img/mobile-banner1.png" alt="" class="banner__mobile">
                     </div>
                     <div class="banner__content">
                         <h1 class="title">
@@ -39,36 +42,42 @@
                 <p class="services__text">Наша компания известна тем, что первой предложила бюджетные сайты по цене от <span>11 990</span> рублей. Это предложение актуально до сих пор и такая низкая стартовая цена обусловлена тем, что для сайта сделан уже готовый функционал, который мы реализовали на Yii/Yii2, переписали на Laravel и “завернули” в нашу CMS KONTUR под определённые сетки (блоки вывода информации). </p>
                 <p class="services__text"><span>На наших сетках Вы можете заказать сайт</span>, который будет адаптирован под специфику именно Вашего бизнеса и иметь оригинальный дизайн. Их мы делим на:</p>
                 <div class="services__box">
-                    <a href="#" class="services__block">
-                        <h5 class="title">Сайт-визитка</h5>
-                        <span class="line"></span>
-                        <h4 class="price">
-                            от <span>11 990</span> руб
-                        </h4>
-                        <div class="img">
-                            <img src="img/services1.png" alt="">
-                        </div>
-                    </a>
-                    <a href="#" class="services__block">
-                        <h5 class="title">Интернет-магазин</h5>
-                        <span class="line"></span>
-                        <h4 class="price">
-                            от <span>21 990</span> руб
-                        </h4>
-                        <div class="img">
-                            <img src="img/services2.png" alt="">
-                        </div>
-                    </a>
-                    <a href="#" class="services__block">
-                        <h5 class="title">Landing page</h5>
-                        <span class="line"></span>
-                        <h4 class="price">
-                            от <span>26 990</span> руб
-                        </h4>
-                        <div class="img">
-                            <img src="img/services3.png" alt="">
-                        </div>
-                    </a>
+                    <div class="wrap">
+                        <a href="#" class="services__block">
+                            <h5 class="title">Сайт-визитка</h5>
+                            <span class="line"></span>
+                            <h4 class="price">
+                                от <span>11 990</span> руб
+                            </h4>
+                            <div class="img">
+                                <img src="img/services1.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a href="#" class="services__block">
+                            <h5 class="title">Интернет-магазин</h5>
+                            <span class="line"></span>
+                            <h4 class="price">
+                                от <span>21 990</span> руб
+                            </h4>
+                            <div class="img">
+                                <img src="img/services2.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a href="#" class="services__block">
+                            <h5 class="title">Landing page</h5>
+                            <span class="line"></span>
+                            <h4 class="price">
+                                от <span>26 990</span> руб
+                            </h4>
+                            <div class="img">
+                                <img src="img/services3.png" alt="">
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <p class="services__text"><span>Также мы можем разработать сайт или сервис</span> полностью отвечающий индивидуальным запросам клиента: иметь полностью индивидуальный дизайн и нестандартный функционал с личным кабинетом, где будет система отчётности, автоматизации и управления ресурсами. Таким образом мы имеем следующие направления разработки:</p>
                 <div class="services__line">
@@ -128,42 +137,55 @@
                 <h2 class="title_h2">Как мы работаем?</h2>
                 <div class="working__box">
                     <div class="working__block">
+                        <img src="img/arr-1.svg" alt="" class="arr">
+                        <img src="img/arr-m1.svg" alt="" class="arr_mobile">
                         <div class="icon">
                             <span>1</span>
                         </div>
                         <p class="text">Вы оставляете заявку на сайте, по телефону или любым удобным способом.</p>
                     </div>
                     <div class="working__block">
+                        <img src="img/arr-2.svg" alt="" class="arr">
+                        <img src="img/arr-m2.svg" alt="" class="arr_mobile">
                         <div class="icon">
                             <span>2</span>
                         </div>
                         <p class="text">Мы связываемся с Вами и уточняем детали заказа.</p>
                     </div>
                     <div class="working__block">
+                        <img src="img/arr-3.svg" alt="" class="arr">
+                        <img src="img/arr-m3.svg" alt="" class="arr_mobile">
                         <div class="icon">
                             <span>3</span>
                         </div>
                         <p class="text">Пишем техническое задание, если его нет.</p>
                     </div>
                     <div class="working__block">
+                        <img src="img/arr-m4.svg" alt="" class="arr_mobile">
                         <div class="icon">
                             <span>4</span>
                         </div>
                         <p class="text">Согласовываем стоимость работ, этапы работ, график оплат и сроки реализации.</p>
                     </div>
                     <div class="working__block">
+                        <img src="img/arr-5.svg" alt="" class="arr">
+                        <img src="img/arr-m5.svg" alt="" class="arr_mobile">
                         <div class="icon">
                             <span>5</span>
                         </div>
                         <p class="text">Приступаем к выполнению задач.</p>
                     </div>
                     <div class="working__block">
+                        <img src="img/arr-6.svg" alt="" class="arr">
+                        <img src="img/arr-m6.svg" alt="" class="arr_mobile">
                         <div class="icon">
                             <span>6</span>
                         </div>
                         <p class="text">По окончанию работ тестируем.</p>
                     </div>
                     <div class="working__block">
+                        <img src="img/arr-7.svg" alt="" class="arr">
+                        <img src="img/arr-m7.svg" alt="" class="arr_mobile">
                         <div class="icon">
                             <span>7</span>
                         </div>
@@ -193,6 +215,25 @@
         </section>
     </main>
     
+    <script src="js/jquery.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        $('.services__box').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: false,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1.12,
+                }
+                }
+            ]
+        });
+    </script>
 </body>
 </html>
